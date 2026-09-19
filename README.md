@@ -20,3 +20,6 @@ The `src/nassau_analysis` package is intended to be consumed by the separate Str
 
 ## Public-data rule
 Never commit the supplied raw CSV or private customer-level data.
+
+## Deployment note
+The original serialized Gradient Boosting deployment artifact was corrupted and has been removed from the public package. The Streamlit app now detects an unavailable binary model and uses a deterministic historical baseline proxy instead of failing or fabricating a factory effect. The benchmark metrics in `model_metrics.csv` remain unchanged and are the evaluation results from the analytical workflow.
