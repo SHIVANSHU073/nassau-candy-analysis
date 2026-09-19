@@ -5,5 +5,6 @@
   "test_rows": 2039,
   "warning": "Target is recorded date difference; source dates contain implausibly long shipping intervals. Factory is confounded with product assignment.",
   "selected_model": "gradient_boosting",
-  "deployment_artifact": "compact 10-estimator Gradient Boosting pipeline for public application packaging; benchmark metrics remain based on the full 250-estimator benchmark."
+  "deployment_artifact": "Disabled in public deployment because the serialized artifact was corrupted. Streamlit uses a deterministic historical baseline proxy when a trained binary artifact is unavailable.",
+  "benchmark_note": "Reported Gradient Boosting metrics remain the benchmark evaluation and are not changed by the deployment fallback."
 }
