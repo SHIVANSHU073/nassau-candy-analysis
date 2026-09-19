@@ -1,0 +1,36 @@
+# Raw/private data
+data/*.csv
+data/*.xlsx
+data/*.xls
+data/raw/
+*.parquet
+
+# Local environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+
+# Local model/build artifacts
+*.pkl
+*.pickle
+*.joblib
+build/
+dist/
+*.egg-info/
+
+# Public packaged model artifacts required by the Streamlit application
+!src/nassau_analysis/artifacts/*.joblib
+!src/nassau_analysis/artifacts/*.csv
+!src/nassau_analysis/artifacts/*.json
+
+# Never commit row-level derived datasets
+outputs/tables/cleaned_*.csv
+outputs/data/
