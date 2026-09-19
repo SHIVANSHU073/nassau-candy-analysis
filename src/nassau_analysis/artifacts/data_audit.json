@@ -1,0 +1,18 @@
+{
+  "rows": 10194,
+  "columns": 21,
+  "missing_cells": 0,
+  "duplicate_rows": 0,
+  "unique_row_ids": 10194,
+  "unique_order_ids": 8549,
+  "unique_products": 15,
+  "lead_time_min": 904,
+  "lead_time_median": 1274.0,
+  "lead_time_max": 1642,
+  "order_date_min": "2024-01-02",
+  "order_date_max": "2025-12-31",
+  "ship_date_min": "2026-06-30",
+  "ship_date_max": "2030-06-28",
+  "gross_profit_consistency_max_abs_error": 7.105427357601002e-15,
+  "mapping_unmatched_products": 0
+}
