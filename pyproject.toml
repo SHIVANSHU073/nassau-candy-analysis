@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nassau-candy-analysis"
+version = "0.1.0"
+description = "Reusable analysis and decision-support components for Nassau Candy factory and shipping optimization"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0,<3",
+  "numpy>=1.24,<3",
+  "scikit-learn>=1.3,<2",
+  "scipy>=1.10,<2",
+  "matplotlib>=3.7,<4",
+  "seaborn>=0.12,<1",
+  "joblib>=1.3,<2"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+nassau_analysis = ["artifacts/*.joblib", "artifacts/*.csv", "artifacts/*.json"]
